@@ -18,19 +18,19 @@ export default function Home() {
       <div className="p-2" />
       <div className="flex max-w-2xl items-center justify-between rounded border p-8">
         <div suppressHydrationWarning={true} className="h-44 w-44">
-          {firstPokemon.data?.sprites.front_default && (
+          {/* {firstPokemon.data?.sprites.front_default && (
             <Image
               src={firstPokemon.data?.sprites.front_default ?? ""}
               width={500}
               height={500}
               alt={firstPokemon.data?.name}
             />
-          )}
-          {/* <img
+          )} */}
+          <img
             src={firstPokemon.data?.sprites.front_default ?? ""}
             alt={firstPokemon.data?.name}
             className="w-full"
-          /> */}
+          />
           <div className="text-center text-xl capitalize">
             {firstPokemon.data?.name}
           </div>
