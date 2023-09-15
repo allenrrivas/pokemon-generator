@@ -1,7 +1,7 @@
 const MAX_DEX_ID = 151;
 
 export const getRandomPokemon: (notThisOne?: number) => number = (
-  notThisOne
+  notThisOne,
 ) => {
   const pokedexNumber = Math.floor(Math.random() * MAX_DEX_ID) + 1;
 
@@ -10,7 +10,7 @@ export const getRandomPokemon: (notThisOne?: number) => number = (
 };
 
 export const getOptionsView = () => {
-    const firstId = getRandomPokemon();
+  const firstId = getRandomPokemon();
 
-    return [firstId];
-}
+  return [firstId];
+};
